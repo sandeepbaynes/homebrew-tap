@@ -5,21 +5,21 @@
 class Byn < Formula
   desc "Local-first secure secrets vault and credential manager."
   homepage "https://github.com/sandeepbaynes/byn"
-  version "0.0.1"
+  version "0.1.0"
   license "BUSL-1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sandeepbaynes/byn/releases/download/v0.0.1/byn-darwin-amd64"
-      sha256 "56f80b61096a47289272094352b37352ce11d52ef33c4948c91226203bae9c01"
+      url "https://github.com/sandeepbaynes/byn/releases/download/v0.1.0/byn-darwin-amd64"
+      sha256 "b887cfb99500dfb0469c272af92b6819a8eb8d926d1e219afe5d5f476e246505"
 
       define_method(:install) do
         bin.install "byn-darwin-amd64" => "byn"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sandeepbaynes/byn/releases/download/v0.0.1/byn-darwin-arm64"
-      sha256 "0cf50d6bf5243d26b83780c389e481da2ff1c2cffd419d1f3c578cb4cd7de76d"
+      url "https://github.com/sandeepbaynes/byn/releases/download/v0.1.0/byn-darwin-arm64"
+      sha256 "44c5cba3ad33d6da0f3f51ef291aefb872594b309586d3fa78d7f3b810f21658"
 
       define_method(:install) do
         bin.install "byn-darwin-arm64" => "byn"
@@ -29,15 +29,15 @@ class Byn < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sandeepbaynes/byn/releases/download/v0.0.1/byn-linux-amd64"
-      sha256 "e3eac1c99542bfb7d24c3d948997571cf2277226b7a2e75bb7146308050bd87b"
+      url "https://github.com/sandeepbaynes/byn/releases/download/v0.1.0/byn-linux-amd64"
+      sha256 "6481caca5727dfe5fa806f53e86caf829411852882d1d5ef71130d1162761a02"
       define_method(:install) do
         bin.install "byn-linux-amd64" => "byn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sandeepbaynes/byn/releases/download/v0.0.1/byn-linux-arm64"
-      sha256 "56e94bed82b54c574cf589405cb5a783944933490d0ffa00cc9a17b2f5bfe33a"
+      url "https://github.com/sandeepbaynes/byn/releases/download/v0.1.0/byn-linux-arm64"
+      sha256 "bd66b8d0a26b734bdd621515b5487b10eb604e126d99e8394a0d924ed33db6a7"
       define_method(:install) do
         bin.install "byn-linux-arm64" => "byn"
       end
