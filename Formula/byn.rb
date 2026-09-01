@@ -5,13 +5,13 @@
 class Byn < Formula
   desc "Local-first secure secrets vault and credential manager."
   homepage "https://github.com/sandeepbaynes/byn"
-  version "0.5.4"
+  version "0.5.5"
   license "BUSL-1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sandeepbaynes/byn/releases/download/v0.5.4/byn-darwin-amd64.tar.gz"
-      sha256 "4ef3fa7aa237ad785a7c5779ddaf991fa51607fc87306f80373f6e6a95d43b21"
+      url "https://github.com/sandeepbaynes/byn/releases/download/v0.5.5/byn-darwin-amd64.tar.gz"
+      sha256 "a6164a09675632bbb2eca0f4191ee53f3d10fbad919e431e6c91512febb218cd"
 
       define_method(:install) do
         bin.install "byn"
@@ -20,8 +20,8 @@ class Byn < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sandeepbaynes/byn/releases/download/v0.5.4/byn-darwin-arm64.tar.gz"
-      sha256 "1da355474595a02f6be00c007374e177d6b5d448b856d51ab091ee5c65189f3a"
+      url "https://github.com/sandeepbaynes/byn/releases/download/v0.5.5/byn-darwin-arm64.tar.gz"
+      sha256 "ea0c7d02ded57e07d9ddc9502d51b0c2dd42bad3083a51a7db689902a8460bac"
 
       define_method(:install) do
         bin.install "byn"
@@ -33,8 +33,8 @@ class Byn < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sandeepbaynes/byn/releases/download/v0.5.4/byn-linux-amd64.tar.gz"
-      sha256 "b7a5964f5bad8b0e0819000373e411834d739e1d20cdf330077ac2cccff705ca"
+      url "https://github.com/sandeepbaynes/byn/releases/download/v0.5.5/byn-linux-amd64.tar.gz"
+      sha256 "d58b22b67c1365d89721e426c0ca987f67774dc23c155d3682b369c2f1335a54"
       define_method(:install) do
         bin.install "byn"
         bin.install "byn-exec-helper"
@@ -42,8 +42,8 @@ class Byn < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sandeepbaynes/byn/releases/download/v0.5.4/byn-linux-arm64.tar.gz"
-      sha256 "8efca21abe55cfc0e484dc7099239571dbc518c92d30532d9ae89b20694fd5d1"
+      url "https://github.com/sandeepbaynes/byn/releases/download/v0.5.5/byn-linux-arm64.tar.gz"
+      sha256 "9e6fae96e78d4d0b5144a2abf173bdbd9efc848a2fbe0fb1a7c7d26df070f616"
       define_method(:install) do
         bin.install "byn"
         bin.install "byn-exec-helper"
