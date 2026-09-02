@@ -11,7 +11,7 @@ class Byn < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/sandeepbaynes/byn/releases/download/v0.6.4/byn-darwin-amd64.tar.gz"
-      sha256 "d32ca87f6cfdb957d3b40f3f11abf95325e65597e023f95dfcbcc4cb347e2d52"
+      sha256 "6188aaa2beaabaf5e3d10e03f71646d52db49ff2a42f22fbe0db85b701df99c8"
 
       define_method(:install) do
         bin.install "byn"
@@ -22,7 +22,7 @@ class Byn < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/sandeepbaynes/byn/releases/download/v0.6.4/byn-darwin-arm64.tar.gz"
-      sha256 "abf06daae3c15ae48c66ae7f9302c6e5eae21d920f12d0dbea80bb6b531e4184"
+      sha256 "31e0ad5e2bbff2ea801c8980ea25a1fbf904aa1931e8ba3a9a9582c0ff494d92"
 
       define_method(:install) do
         bin.install "byn"
@@ -36,7 +36,7 @@ class Byn < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/sandeepbaynes/byn/releases/download/v0.6.4/byn-linux-amd64.tar.gz"
-      sha256 "4553e21adb2c14ba0293020a2dee2529428aa15878cfc576ca12961f57163721"
+      sha256 "5ee0bdd43081715c4c1b8179c88261489e3cf621bc69940b5529b1b8f69d0f5e"
       define_method(:install) do
         bin.install "byn"
         bin.install "byn-exec-helper"
@@ -46,7 +46,7 @@ class Byn < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/sandeepbaynes/byn/releases/download/v0.6.4/byn-linux-arm64.tar.gz"
-      sha256 "10123a8609d26e97697db469677efd661078894dce16d720c4c3d738f84b2921"
+      sha256 "3018667cceac385ff058fc4388f14b63c2f0ebdcca2dc6955114a19dbaa6a59f"
       define_method(:install) do
         bin.install "byn"
         bin.install "byn-exec-helper"
